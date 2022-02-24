@@ -1,6 +1,5 @@
 package com.android.upsell.adapter;
 
-import static com.android.upsell.Util.ARRIVALS_ITEMS_COUNT;
 import static com.android.upsell.Util.DIFF_CALLBACK;
 
 import android.content.Context;
@@ -15,36 +14,38 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.upsell.R;
 
-public class ArrivalsAdapter  extends ListAdapter<String, ArrivalsAdapter.ViewHolder> {
+public class SubcategoryAdapter extends ListAdapter<String, SubcategoryAdapter.ViewHolder> {
 
     Context context;
 
-    public  ArrivalsAdapter() {
+    public  SubcategoryAdapter() {
         super(DIFF_CALLBACK);
     }
 
     @NonNull
     @Override
-    public ArrivalsAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.arrival_item,parent,false);
+    public SubcategoryAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.sub_category,parent,false);
         context = parent.getContext();
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull SubcategoryAdapter.ViewHolder holder, int position) {
 
     }
 
     @Override
     public int getItemCount() {
-        return ARRIVALS_ITEMS_COUNT;
+        return 2;
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
+        TextView categoryName;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            categoryName = itemView.findViewById(R.id.category_name);
 
         }
     }

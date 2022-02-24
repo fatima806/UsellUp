@@ -9,7 +9,11 @@
     <string name="off">50% off</string>
     <string name="best_practice"><![CDATA[Best practice Definition & Meaning]]></string>
     <string name="shop">Shop</string>
-    <string name="header_til">HEAD TIL%s</string>
+    <string name="header_til0">HEAD TIL0</string>
+    <string name="header_til1">HEAD TIL1</string>
+    <string name="header_til2">HEAD TIL2</string>
+    <string name="header_til3">HEAD TIL3</string>
+    <string name="header_til4">HEAD TIL4</string>
     <string name="main_category">Main\nCategory%s</string>
     <string name="best_title">#BSET TITLE</string>
     <string name="km">3 KM</string>
@@ -19,4 +23,11 @@
     <string name="user">\@_user%s</string>
     <string name="shop_by_category">#shop by category</string>
     <string name="view_all">View All</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="footer0">TERM OF USE</string>
+    <string name="footer1">CONTACT</string>
+    <string name="footer2">CAREER</string>
+    <string name="footer3">AREA RANGE</string>
+    <string name="powered_by">powered by <b>ezeness technology</b></string>
+    <string name="search">Search</string>
 </resources>

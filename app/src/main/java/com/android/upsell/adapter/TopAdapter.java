@@ -1,6 +1,7 @@
 package com.android.upsell.adapter;
 
 import static com.android.upsell.Util.DIFF_CALLBACK;
+import static com.android.upsell.Util.TOPS_ITEMS_COUNT;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -36,7 +37,7 @@ public class TopAdapter extends ListAdapter<String, TopAdapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return 4;
+        return TOPS_ITEMS_COUNT;
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {

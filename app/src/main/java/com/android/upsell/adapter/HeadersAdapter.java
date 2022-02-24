@@ -1,6 +1,8 @@
 package com.android.upsell.adapter;
 
 import static com.android.upsell.Util.DIFF_CALLBACK;
+import static com.android.upsell.Util.HEADERS_ITEMS_COUNT;
+import static com.android.upsell.Util.INT_DIFF_CALLBACK;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,10 +17,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.upsell.R;
 
-public class HeadersAdapter extends ListAdapter<String, HeadersAdapter.ViewHolder> {
+public class HeadersAdapter extends ListAdapter<Integer, HeadersAdapter.ViewHolder> {
     Context context;
     public HeadersAdapter() {
-        super(DIFF_CALLBACK);
+        super(INT_DIFF_CALLBACK);
     }
 
     @NonNull
@@ -31,13 +33,13 @@ public class HeadersAdapter extends ListAdapter<String, HeadersAdapter.ViewHolde
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.header_name.setText(context.getString(R.string.header_til,String.valueOf(position)));
+        holder.header_name.setText(context.getString(getItem(position)));
 
     }
 
     @Override
     public int getItemCount() {
-        return 4;
+        return HEADERS_ITEMS_COUNT;
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {

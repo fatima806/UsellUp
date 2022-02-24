@@ -1,5 +1,6 @@
 package com.android.upsell.adapter;
 
+import static com.android.upsell.Util.CATEGORIES_ITEMS_COUNT;
 import static com.android.upsell.Util.DIFF_CALLBACK;
 
 import android.content.Context;
@@ -38,7 +39,7 @@ public class CategoryAdapter extends ListAdapter<String, CategoryAdapter.ViewHol
 
     @Override
     public int getItemCount() {
-        return 3;
+        return CATEGORIES_ITEMS_COUNT;
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {

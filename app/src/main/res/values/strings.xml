@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">UpSell</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="usell">U Sell</string>
+    <string name="up">Up</string>
+    <string name="aed300">AED 300/-</string>
+    <string name="off">50% off</string>
+    <string name="best_practice"><![CDATA[Best practice Definition & Meaning]]></string>
+    <string name="shop">Shop</string>
+    <string name="header_til">HEAD TIL%s</string>
+    <string name="main_category">Main\nCategory%s</string>
+    <string name="best_title">#BSET TITLE</string>
+    <string name="km">3 KM</string>
+    <string name="strike_zero"><strike>00.00/</strike></string>
+    <string name="product_service">Product Service Title Product</string>
+    <string name="top_title">TOP TITLE</string>
+    <string name="user">\@_user%s</string>
+    <string name="shop_by_category">#shop by category</string>
+    <string name="view_all">View All</string>
+</resources>
